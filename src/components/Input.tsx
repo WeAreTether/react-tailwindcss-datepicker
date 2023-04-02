@@ -1,4 +1,5 @@
 import dayjs from "dayjs";
+import advancedFormat from "dayjs/plugin/advancedFormat";
 import React, { useCallback, useContext, useEffect, useRef } from "react";
 
 import { BORDER_COLOR, DATE_FORMAT, RING_COLOR } from "../constants";
@@ -6,6 +7,8 @@ import DatepickerContext from "../contexts/DatepickerContext";
 import { dateIsValid } from "../helpers";
 
 import ToggleButton from "./ToggleButton";
+
+dayjs.extend(advancedFormat);
 
 type Props = {
     setContextRef?: (ref: React.RefObject<HTMLInputElement>) => void;
