@@ -309,7 +309,7 @@ const Datepicker: React.FC<DatepickerType> = ({
                 <Input setContextRef={setInputRef} />
 
                 <div
-                    className="transition-all ease-out duration-300 absolute z-50 mt-[1px] text-sm lg:text-xs 2xl:text-sm translate-y-4 opacity-0 hidden"
+                    className="transition-all ease-out duration-300 z-50 mt-[1px] text-sm lg:text-xs 2xl:text-sm translate-y-4 opacity-0 hidden fixed bottom-0 left-0 right-0 m-0 sm:absolute sm:bottom-auto sm:left-auto sm:right-auto"
                     ref={calendarContainerRef}
                 >
                     <Arrow ref={arrowRef} />
