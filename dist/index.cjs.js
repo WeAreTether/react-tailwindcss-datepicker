@@ -884,7 +884,7 @@ const DoubleChevronRightIcon = ({ className = "w-6 h-6" }) => {
 };
 // eslint-disable-next-line react/display-name,@typescript-eslint/ban-types
 const Arrow = React__default["default"].forwardRef((props, ref) => {
-    return (React__default["default"].createElement("div", { ref: ref, className: "absolute z-20 h-4 w-4 rotate-45 mt-0.5 ml-[1.2rem] border-l border-t border-gray-300 bg-white dark:bg-neutral-800 dark:border-neutral-600" }));
+    return (React__default["default"].createElement("div", { ref: ref, className: "hidden sm:block absolute z-20 h-4 w-4 rotate-45 mt-0.5 ml-[1.2rem] border-l border-t border-gray-300 bg-white dark:bg-neutral-800 dark:border-neutral-600" }));
 });
 const SecondaryButton = ({ children, onClick, disabled = false }) => {
     // Contexts
@@ -1962,7 +1962,7 @@ const Datepicker = ({ primaryColor = "blue", value = null, onChange, useRange = 
     return (React__default["default"].createElement(DatepickerContext.Provider, { value: contextValues },
         React__default["default"].createElement("div", { className: `relative w-full text-gray-700 ${containerClassName}`, ref: containerRef },
             React__default["default"].createElement(Input, { setContextRef: setInputRef }),
-            React__default["default"].createElement("div", { className: "transition-all ease-out duration-300 absolute z-50 mt-[1px] text-sm lg:text-xs 2xl:text-sm translate-y-4 opacity-0 hidden", ref: calendarContainerRef },
+            React__default["default"].createElement("div", { className: "transition-all ease-out duration-300 z-50 mt-[1px] text-sm lg:text-xs 2xl:text-sm translate-y-4 opacity-0 hidden fixed bottom-0 left-0 right-0 m-0 sm:absolute sm:bottom-auto sm:left-auto sm:right-auto", ref: calendarContainerRef },
                 React__default["default"].createElement(Arrow, { ref: arrowRef }),
                 React__default["default"].createElement("div", { className: "mt-2.5 shadow-sm border border-gray-300 px-1 py-0.5 bg-white dark:bg-neutral-800 dark:text-white dark:border-neutral-600 rounded-lg" },
                     React__default["default"].createElement("div", { className: "flex flex-col lg:flex-row py-2" },
