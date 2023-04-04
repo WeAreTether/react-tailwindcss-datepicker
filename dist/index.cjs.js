@@ -1601,7 +1601,7 @@ const Input = (e) => {
         React__default["default"].createElement("input", { ref: inputRef, type: "text", className: getClassName(), disabled: disabled, readOnly: readOnly, placeholder: placeholder
                 ? placeholder
                 : `${displayFormat}${asSingle ? "" : ` ${separator} ${displayFormat}`}`, value: inputText, id: inputId, name: inputName, autoComplete: "off", role: "presentation", onChange: handleInputChange }),
-        React__default["default"].createElement("button", { type: "button", ref: buttonRef, disabled: disabled, className: getToggleClassName() }, renderToggleIcon(inputText == null || (inputText != null && !inputText.length)))));
+        React__default["default"].createElement("button", { "aria-label": "Calendar", type: "button", ref: buttonRef, disabled: disabled, className: getToggleClassName() }, renderToggleIcon(inputText == null || (inputText != null && !inputText.length)))));
 };
 
 const DEFAULT_SHORTCUTS = {

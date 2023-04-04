@@ -243,6 +243,7 @@ const Input: React.FC<Props> = (e: Props) => {
             />
 
             <button
+                aria-label="Calendar"
                 type="button"
                 ref={buttonRef}
                 disabled={disabled}
